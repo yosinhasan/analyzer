@@ -1,0 +1,47 @@
+package ua.nure.yosin.SummaryTask1.coffee;
+
+/**
+ * CoffeeState maintains the physical states of coffee.&nbsp Each state has it's
+ * <code>Integer</code> density value.
+ * 
+ * @author Hasan Yosin
+ */
+public enum CoffeeState {
+	/**
+	 * States.
+	 */
+	ROASTED_BEANS(24), GROUND(25), SOLUBLE(19);
+	/**
+	 * Density.
+	 */
+	private Integer density;
+
+	/**
+	 * 
+	 * @param density2
+	 *            The density of a particular coffee state
+	 */
+	CoffeeState(final Integer density2) {
+		this.density = density2;
+	}
+
+	/**
+	 * Get density.
+	 * 
+	 * @return Integer
+	 */
+	public Integer getDensity() {
+		return density;
+	}
+
+	/**
+	 * Set density.
+	 * 
+	 * @param density2
+	 *            coffee state density
+	 */
+	public void setDensity(final Integer density2) {
+		this.density = density2;
+	}
+
+}
